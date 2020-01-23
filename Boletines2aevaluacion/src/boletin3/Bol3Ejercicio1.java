@@ -14,8 +14,9 @@ public class Bol3Ejercicio1 {
 		
 		//falta asignar el conductor al coche ????
 		
+
 		
-		
+		c1.setConductor (cond1);
 		
 		
 		Remolque rem1 = new Remolque ();
