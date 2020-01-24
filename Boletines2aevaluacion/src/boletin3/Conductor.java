@@ -13,6 +13,11 @@ public class Conductor {
 		
 	}
 	
+	public String toString() 
+	{
+		return dni + " " + nombre; 
+	}
+	
 	
 	
 }

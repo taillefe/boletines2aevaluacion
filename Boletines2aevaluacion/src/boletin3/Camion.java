@@ -12,4 +12,15 @@ public class Camion extends Vehiculo {
 		velocidadMaxima = vMaxima;
 		this.remolque = remolque;
 	}
+
+	 @Override
+	public void mostrarDatos() {
+		 System.out.println(altura + " "+ remolque.matricula + " "+ remolque.longitud);
+		 System.out.println(remolque.toString());
+		 
+	}
+
 }
+
+
+

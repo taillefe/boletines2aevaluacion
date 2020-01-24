@@ -4,9 +4,9 @@ public class Vehiculo {
 	
 	
 	protected String matricula;
-	private String tipo;
+	protected String tipo;
 	protected int velocidadMaxima;
-	private Conductor conductor;
+	protected Conductor conductor;
 	
 	public String getMatricula()
 	{
@@ -49,6 +49,12 @@ public class Vehiculo {
 		this.conductor = conductor;
 	}
 	
+	
+	public void mostrarDatos()
+	{
+		System.out.println(matricula +" " +tipo +" " + velocidadMaxima +" " + conductor.dni +" "+ conductor.nombre);
+		System.out.println(conductor.toString());
+	}
 	
 }
 	
