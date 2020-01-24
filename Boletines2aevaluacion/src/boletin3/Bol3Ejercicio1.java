@@ -66,5 +66,10 @@ public class Bol3Ejercicio1 {
 		*/
 
 	}
+	
+	public static void impresionPolimorfismo (Vehiculo deportivo)
+	{
+		deportivo.mostrarDatos();
+	}
 
 }
