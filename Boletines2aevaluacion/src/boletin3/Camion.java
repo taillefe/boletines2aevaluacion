@@ -2,8 +2,8 @@ package boletin3;
 
 public class Camion extends Vehiculo {
 	
-	private int altura;
-	private Remolque remolque;
+	public int altura;
+	public Remolque remolque;
 	
 	public Camion (String matricula, String tipo, int vMaxima, Remolque remolque)
 	{
@@ -13,11 +13,17 @@ public class Camion extends Vehiculo {
 		this.remolque = remolque;
 	}
 
+	public Camion (String matricula, String tipo, int vMaxima, int altura)
+	{
+		super(matricula, tipo, vMaxima);  // esto es igual que super.matricula = matricula , pero solo en la primera posicion del metodo
+		this.altura = altura;
+	}
+	
 	 @Override
 	public void mostrarDatos() {
-		 System.out.println(altura + " "+ remolque.matricula + " "+ remolque.longitud);
-		 System.out.println(remolque.toString());
-		 
+		 System.out.println(altura);
+		 System.out.println("Remolque:" + remolque);  // esto es igual que remolque.toString(), y si es NULL imprime NULL
+		 super.mostrarDatos();
 	}
 
 }

@@ -8,6 +8,19 @@ public class Vehiculo {
 	protected int velocidadMaxima;
 	protected Conductor conductor;
 	
+	
+	public Vehiculo(String matricula, String tipo, int velocidadMaxima)
+	{
+		this.matricula = matricula;
+		this.tipo = tipo;
+		this.velocidadMaxima = velocidadMaxima;
+	}
+	
+	public Vehiculo ()
+	{
+		
+	}
+	
 	public String getMatricula()
 	{
 		return this.matricula;
@@ -52,8 +65,8 @@ public class Vehiculo {
 	
 	public void mostrarDatos()
 	{
-		System.out.println(matricula +" " +tipo +" " + velocidadMaxima +" " + conductor.dni +" "+ conductor.nombre);
-		System.out.println(conductor.toString());
+		System.out.println(matricula +" " +tipo +" " + velocidadMaxima);
+		System.out.println(conductor);  // esto es igual que conductor.toString(), y si este es NULL imprime NULL
 	}
 	
 }

@@ -2,11 +2,13 @@ package boletin3;
 
 public class Bol3Ejercicio1 {
 
+	public static final String T1 = "COCHE";
+	static final String T2 = "CAMION";
+	
+	
 	public static void main(String[] args) {
 		
-		final String T1 = "COCHE";
-		final String T2 = "CAMION";
-		
+	/*
 		
 		Coche c1 = new Coche("1234ABC",T1,120,5);
 		
@@ -38,18 +40,36 @@ public class Bol3Ejercicio1 {
 		v1.tipo = T1;
 		v1.conductor = cond1;
 		
-		
-		
+		//apartado 3
+		System.out.println("mostrar datos de coche");
 		c1.mostrarDatos();
+		
+		System.out.println("mostrar datos de vehiculo");
 		v1.mostrarDatos();
 		
 		// mostrardatos de un coche tratado como un vehiculo
-		
-		((Vehiculo)c1).mostrarDatos();
-		
+		System.out.println("mostrar datos de coche como vehiculo");
+		((Vehiculo)c1).mostrarDatos(); // esto no muestra los datos del vehiculo, muestra los del coche
+										// para mostrar los del vehiculo, dentro de la clase coche hay que hacer
+										// referencia a super.tipos de datos
+		System.out.println("mostrar datos de camion");
 		cam1.mostrarDatos();
 		
 		
+		
+		//apartado 4
+		System.out.println("impresion polimorfismo con coche");
+		impresionPolimorfismo(c1);
+		System.out.println("impresion polimorfismo con camion");
+		impresionPolimorfismo(cam1);
+		
+		*/
+		//apartado 5
+		
+		Camion cam2 = new Camion("nuevo camion",T2,60,3);
+		cam2.mostrarDatos();
+		System.out.println("mostrar datos de camion en el apartado 5");
+		System.out.println(cam2.matricula + " "+ cam2.tipo + " "+ cam2.velocidadMaxima + " " + cam2.altura);
 		
 		/*
 		(vehiculo v)
@@ -58,18 +78,31 @@ public class Bol3Ejercicio1 {
 		v1 instanceof(Coche)
 		
 			
-		if (v1.tipo.equals(T2))
-			{
-				
-			}
-		}
+		
 		*/
 
 	}
 	
-	public static void impresionPolimorfismo (Vehiculo deportivo)
+	public static void impresionPolimorfismo (Vehiculo v)
 	{
-		deportivo.mostrarDatos();
+		v.mostrarDatos();
 	}
+	
+	public static void impresionSoloCamion (Vehiculo v)
+	{
+		
+		if (v.tipo.equals(T2))
+			{
+			Camion camPoli=(Camion)v;
+				camPoli.remolque.toString();
+				
+					
+			}
+	
+	}
+
+
+
+	
 
 }
