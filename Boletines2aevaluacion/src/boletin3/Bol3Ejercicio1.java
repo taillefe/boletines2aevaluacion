@@ -8,7 +8,7 @@ public class Bol3Ejercicio1 {
 	
 	public static void main(String[] args) {
 		
-	/*
+	
 		
 		Coche c1 = new Coche("1234ABC",T1,120,5);
 		
@@ -63,7 +63,7 @@ public class Bol3Ejercicio1 {
 		System.out.println("impresion polimorfismo con camion");
 		impresionPolimorfismo(cam1);
 		
-		*/
+		
 		//apartado 5
 		
 		Camion cam2 = new Camion("nuevo camion",T2,60,3);

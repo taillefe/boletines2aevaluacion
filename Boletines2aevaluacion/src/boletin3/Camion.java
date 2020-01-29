@@ -23,7 +23,7 @@ public class Camion extends Vehiculo {
 	public void mostrarDatos() {
 		 System.out.println(altura);
 		 System.out.println("Remolque:" + remolque);  // esto es igual que remolque.toString(), y si es NULL imprime NULL
-		 super.mostrarDatos();
+		 super.mostrarDatos();  // apartado 5.4
 	}
 
 }
