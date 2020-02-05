@@ -13,11 +13,7 @@ public class Cuadrado extends Rectangulo{
 	}
 	*/
 	
-	/**
-	 * calcula el área de un cuadrado pasandole el valor del lado
-	 * @param l valor del lado  real
-	 * @return areaCuadrado valor del area del cuadrado double
-	 */
+	
 /*	public void calcularArea()
 	{
 		
@@ -54,7 +50,12 @@ public class Cuadrado extends Rectangulo{
 	
 	public String toString() 
 	{
-		return super.lado; 
+		return String.format(" Cuadrado\nEl lado es:%s\nEl area es:%s", getAltura(), getArea());
+		
+		//return String.valueOf(getAltura());   esto devuelve el valor double como un string
+		
 	}
+	
+	
 	
 }

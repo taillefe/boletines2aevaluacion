@@ -46,8 +46,10 @@ public class Triangulo extends Figura {
 		this.altura = altura;
 	}
 
-
-	
+	public String toString() 
+	{
+		return String.format(" Triangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s", base, altura,getArea());
+	}	
 	
 	
 }

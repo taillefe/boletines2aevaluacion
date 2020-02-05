@@ -19,8 +19,7 @@ public class Circulo extends Figura {
 	 */
 	public void calcularArea()
 	{
-		
-		
+			
 		setArea( PI * radio * radio);
 	}
 	
@@ -35,6 +34,9 @@ public class Circulo extends Figura {
 		this.radio = radio;
 	}
 
-
+	public String toString() 
+	{
+		return String.format(" Circulo\nEl radio es:%s\nEl area es:%s", radio, getArea());
+	}	
 
 }

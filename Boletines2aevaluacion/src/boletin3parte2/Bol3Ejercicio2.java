@@ -8,6 +8,7 @@ public class Bol3Ejercicio2 {
 		Triangulo t1 = new Triangulo(2,12);
 		Cuadrado c1 = new Cuadrado (2);
 		Circulo cir1 = new Circulo (10);
+		Rectangulo r1 = new Rectangulo(2,3);
 		
 		
 		t1.calcularArea();
@@ -16,6 +17,14 @@ public class Bol3Ejercicio2 {
 		System.out.println ("Area del cuadrado "+ c1.getArea());
 		cir1.calcularArea();
 		System.out.println ("Area del circulo "+ cir1.getArea());
+		r1.calcularArea();
+		System.out.println ("Area del rectangulo "+ r1.getArea());
+		
+				
+		System.out.println (c1.toString());  // si se pone solo el objeto busca el toString() seria igual a c1
+		System.out.println (t1);
+		System.out.println (cir1);
+		System.out.println (r1);
 		
 		// apartado 5
 		
@@ -49,6 +58,18 @@ public class Bol3Ejercicio2 {
 			if (aFiguras[i] instanceof Triangulo) 
 			{
 				arrayTriangulos[i] = (Triangulo)aFiguras[i];
+			}
+			if (aFiguras[i] instanceof Cuadrado) 
+			{
+				arrayCuadrados[i] = (Cuadrado)aFiguras[i];
+			}
+			if (aFiguras[i] instanceof Rectangulo) 
+			{
+				arrayRectangulos[i] = (Rectangulo)aFiguras[i];
+			}
+			if (aFiguras[i] instanceof Circulo) 
+			{
+				arrayCirculos[i] = (Circulo)aFiguras[i];
 			}
 		}
 	}
