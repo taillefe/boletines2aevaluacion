@@ -41,16 +41,17 @@ public class Bol3Ejercicio2 {
 				new Cuadrado (9)
 		};
 		
-		
+		guardarArray(arrayFiguras);
 	}
 	
-	public  void guardarArray ( Figura [] aFiguras)
+	public static void guardarArray ( Figura [] aFiguras)  // si esto no fuera static, para llamarlo en este main, 
+															// debería crear un objeto de la clase Bol3Ejercicio2 
 	{
 		
-		Cuadrado[] arrayCuadrados;
-		Triangulo[] arrayTriangulos;
-		Rectangulo[] arrayRectangulos;
-		Circulo[] arrayCirculos;
+		Cuadrado[] arrayCuadrados = new Cuadrado[aFiguras.length];
+		Triangulo[] arrayTriangulos =new Triangulo[aFiguras.length];
+		Rectangulo[] arrayRectangulos = new Rectangulo[aFiguras.length];;
+		Circulo[] arrayCirculos=new Circulo[aFiguras.length];
 		
 		
 		for (int i=0; i < aFiguras.length; i++)
@@ -72,6 +73,13 @@ public class Bol3Ejercicio2 {
 				arrayCirculos[i] = (Circulo)aFiguras[i];
 			}
 		}
+		
+		System.out.println("Valores de array de cuadrado");
+		for(Cuadrado c:arrayCuadrados)
+		{
+			System.out.println(c);  // esto es lo mismo que hacer c.toString()
+		}
+		
 	}
 
 }
