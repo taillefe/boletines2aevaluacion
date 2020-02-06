@@ -10,7 +10,7 @@ public class Bol3Ejercicio2 {
 		Circulo cir1 = new Circulo (10);
 		Rectangulo r1 = new Rectangulo(2,3);
 		
-		
+/*		
 		t1.calcularArea();
 		System.out.println ("Area del triangulo "+ t1.getArea());
 		c1.calcularArea();
@@ -42,7 +42,35 @@ public class Bol3Ejercicio2 {
 		};
 		
 		guardarArray(arrayFiguras);
+	*/	
+		t1.calcularArea();
+		t1.calcularPerimetro();
+		t1.imprimirDatosFigura();
+		t1.imprimirArea();
+		t1.imprimirPerimetro();
+		
+		c1.calcularArea();
+		c1.calcularPerimetro();
+		c1.imprimirDatosFigura();
+		c1.imprimirArea();
+		c1.imprimirPerimetro();
+		
+		cir1.calcularArea();
+		cir1.calcularPerimetro();
+		cir1.imprimirDatosFigura();
+		cir1.imprimirArea();
+		cir1.imprimirPerimetro();
+		
+		r1.calcularArea();
+		r1.calcularPerimetro();
+		r1.imprimirDatosFigura();
+		r1.imprimirArea();
+		r1.imprimirPerimetro();
+		
+		
 	}
+	
+	
 	
 	public static void guardarArray ( Figura [] aFiguras)  // si esto no fuera static, para llamarlo en este main, 
 															// debería crear un objeto de la clase Bol3Ejercicio2 

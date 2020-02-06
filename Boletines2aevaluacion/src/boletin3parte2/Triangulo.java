@@ -25,6 +25,21 @@ public class Triangulo extends Figura {
 		setArea((base * altura)/2.0);
 		
 	}
+	
+	public void calcularPerimetro()       // ejercicio 3. apartado 1
+	{
+		setPerimetro(base * 3);
+		
+	}
+	
+	public void imprimirDatosFigura()     // ejercicio3. apartado 2
+	{
+		
+		System.out.printf(" \nTriangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s\nEl perimetro es:%s\n", base, altura,getArea(), getPerimetro());
+	//	 printf(this.toString());
+	
+	}
+	
 
 	public double getBase()
 	{
@@ -48,7 +63,7 @@ public class Triangulo extends Figura {
 
 	public String toString() 
 	{
-		return String.format(" Triangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s", base, altura,getArea());
+		return String.format("\n Triangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s", base, altura,getArea());
 	}	
 	
 	

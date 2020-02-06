@@ -48,9 +48,20 @@ public class Cuadrado extends Rectangulo{
 		super(lado, lado);
 	}
 	
+	/*
+	@Override
+
+	public  void calcularArea()
+	{
+		
+		setArea(base * altura);
+	
+	}*/
+	
+	
 	public String toString() 
 	{
-		return String.format(" Cuadrado\nEl lado es:%s\nEl area es:%s", getAltura(), getArea());
+		return String.format(" \nCuadrado\nEl lado es:%s\nEl area es:%s\nElPerimetro es: %s\n", getAltura(), getArea(),getPerimetro());
 		
 		//return String.valueOf(getAltura());   esto devuelve el valor double como un string
 		

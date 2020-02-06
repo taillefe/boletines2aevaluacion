@@ -18,12 +18,26 @@ private double altura;
 	 * @param base y altura
 	
 	 */
-	public void calcularArea()
+	public final void calcularArea()
 	{
 				
 		setArea(base * altura);
 		
 	}
+	
+	public void calcularPerimetro()    // ejercicio 3. apartado 1
+	{
+		setPerimetro((base * 2) + (altura * 2));
+		
+	}
+	
+	
+	public void imprimirDatosFigura()     // ejercicio3. apartado 2
+	{
+		//System.out.printf(" \nRectangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s\nEl perimetro es:%s\n", base, altura,getArea(), getPerimetro());
+			 System.out.printf(this.toString());
+	}
+	
 	
 	public double getBase()
 	{
@@ -48,7 +62,7 @@ private double altura;
 
 	public String toString() 
 	{
-		return String.format(" Rectangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s", this.base, this.altura,getArea());
+		return String.format("\n Rectangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s\nEl perimetro es:%s\n", this.base, this.altura,getArea(),getPerimetro());
 		
 		//return String.valueOf(this.base);   esto devuelve el valor double como un string
 		
