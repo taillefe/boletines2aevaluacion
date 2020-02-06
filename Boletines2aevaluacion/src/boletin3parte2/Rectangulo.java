@@ -18,7 +18,7 @@ private double altura;
 	 * @param base y altura
 	
 	 */
-	public final void calcularArea()
+	public final void calcularArea()   // poner esta clase como final para no poder sobreescribirla en cuadrado
 	{
 				
 		setArea(base * altura);
@@ -35,8 +35,8 @@ private double altura;
 	public void imprimirDatosFigura()     // ejercicio3. apartado 2
 	{
 		//System.out.printf(" \nRectangulo\nLa base es:%s\nLa altura es:%s\nEl area es:%s\nEl perimetro es:%s\n", base, altura,getArea(), getPerimetro());
-			 System.out.printf(this.toString());
-	}
+			 System.out.printf(this.toString());   // en rectangulo uso toString para que cuando lo llame circulo aparezcan los datos de circulo   
+	}				
 	
 	
 	public double getBase()
