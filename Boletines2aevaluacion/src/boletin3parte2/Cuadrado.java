@@ -58,6 +58,9 @@ public class Cuadrado extends Rectangulo{
 	
 	}*/
 	
+	// podría sobreescribir el metodo imprimirDatosFigura() con los datos de Cuadrado, pero uso el de rectangulo
+	// en el que he llamado al metodo toString del objeto que lo invoca.
+	
 	
 	public String toString() 
 	{
