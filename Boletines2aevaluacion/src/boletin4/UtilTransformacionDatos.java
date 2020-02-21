@@ -29,7 +29,16 @@ public class UtilTransformacionDatos {
 		return esNumerico;
 	}//esValorNumerico
 		
+	public static double obtenerValorDouble(String cadena)
+	{
+		double numero = 0;
+		
+		
+		
+		
+		
+		return numero;
 		
 
-	
+	}
 }
