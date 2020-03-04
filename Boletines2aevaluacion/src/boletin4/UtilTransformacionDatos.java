@@ -34,17 +34,18 @@ public class UtilTransformacionDatos {
 		return esNumerico;
 	}//esValorNumerico
 		
-	public static double obtenerValorDouble(String cadena) throws IOException
+	public static double obtenerValorDouble(String cadena) throws NumberFormatException
 	{
 		double numero = 0;
 		
-		
-		
-		
-		
-		
+		numero = Double.parseDouble(cadena);
+		System.out.println ("el valor introducido es double");
+			
 		return numero;
 		
 
 	}
+	
 }
+	
+	
