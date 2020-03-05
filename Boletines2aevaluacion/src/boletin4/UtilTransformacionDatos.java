@@ -18,7 +18,8 @@ public class UtilTransformacionDatos {
 				
 				///
 			}
-			catch (NumberFormatException ex)
+			catch (NumberFormatException ex)       // este metodo controla la excepcion dentro del 
+													// propio metodo
 			{
 				esNumerico = false;
 				System.out.println ("Se ha producido una excepcion " + 
@@ -44,7 +45,7 @@ public class UtilTransformacionDatos {
 		return numero;
 		
 
-	}
+	}  // este metodo lanza una excepcions a través del thows que debe ser controlada en el main
 	
 }
 	

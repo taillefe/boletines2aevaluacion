@@ -20,6 +20,7 @@ public class UtilObtencionDatos {
 			num=sc.nextInt();
 			if (num<=0)
 			{
+				// lanza la excepcion aqui para que se controle en el main (con una excepcion personalizada)
 				throw new ValorNumericoNegativoException("El numero debe ser positivo");
 							
 			}	

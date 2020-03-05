@@ -21,8 +21,9 @@ public class Bol4Ejercicio1 {
 		cadena=sc.next();
 			
 		
+		//este metodo esValorNumerico controla la excepcion dentro del propio metodo
 		
-		esNumero = UtilTransformacionDatos.esValorNumerico (cadena);
+		esNumero = UtilTransformacionDatos.esValorNumerico (cadena);   
 		if (esNumero)
 		{
 			System.out.println ("El valor introducido es un numero");
@@ -36,6 +37,10 @@ public class Bol4Ejercicio1 {
 	/*	
 		String cadena2 = "23";
 		double numeroDouble;
+		
+		// este metodo obtenerValorDouble lanza la excepcion a través de un throws
+		//  y se controla en el main
+		
 		try
 		{
 			numeroDouble = UtilTransformacionDatos.obtenerValorDouble(cadena2);
