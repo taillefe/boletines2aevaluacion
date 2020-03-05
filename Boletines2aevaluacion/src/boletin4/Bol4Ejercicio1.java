@@ -72,12 +72,34 @@ public class Bol4Ejercicio1 {
 		
 	//************Ejercicio 4 **********//	
 
-		String nom = "Pedro";
-		String pass = "ppp";
-		Usuario u1 = new Usuario(nom,pass);
-		Usuario u2 = new Usuario("","");
-		UtilLogeo util = new UtilLogeo();
-		u2 = util.realizarLogin(nom,pass);
+		//String nom = "Pedro";
+		//String pass = "ppp";
+		
+		
+		String nom= "luis86";  // usuario existente
+		String pass = "00000";	// contraseña incorrecta
+		
+		
+		UtilLogeo util = new UtilLogeo();    // crear objeto de tipo UtilLogeo para poder llamar a su metodo
+		
+	
+		try {
+			Usuario u = util.realizarLogin(nom,pass);   // llamada al metodo de la clase UtilLogeo
+			
+		} catch (LoginUsuarioNoExistente ex) {    // primera comprobación de usuario no existente
+			
+			System.out.println(ex.getMessage());
+		}
+
+		catch (LoginUsuarioPassErroneo ex) {     // segunda comprobación de password erroneo
+			
+
+			System.out.println(ex.getMessage());
+		}
+		finally
+		{
+			System.out.println("Entrada en FINALLY");   // siempre entra en finally
+		}
 		
 		
 		
