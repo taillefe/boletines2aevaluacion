@@ -26,6 +26,13 @@ public class Persona {
 		return edad;
 		}//getEdad
 		
+		
+		@Override    	// sobreescribo este metodo para poder imprimir todo el objeto persona de una vez
+		public String toString() {
+		
+		return nombre.toString()+ " "+ apellidos.toString() +" " + getEdad();
+	
+		}
 }//class
 
 	
