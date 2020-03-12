@@ -37,7 +37,9 @@ public class Bol5Ejer1 {
 		 //public class Ejercicio1 {
 		//	public static void main(String[] args) {
 
-		ArrayList<Persona> listaPersonasJ = new ArrayList<>();
+		ArrayList<Persona> listaPersonasResultado = new ArrayList<>();
+		ArrayList<Persona> listaPersonasResultado2 = new ArrayList<>();
+
 
 			ArrayList<Persona> listaPersonas= new ArrayList<Persona>();
 			listaPersonas.add(new Persona("Jose","Martinez Granda",55));
@@ -50,17 +52,33 @@ public class Bol5Ejer1 {
 			
 	//llamada al método de obtener personas cuyo nombre comience por 'J'
 			
-			listaPersonasJ = buscarPersonasQueEmpiecenPor(listaPersonas, 'J');
-			for (int i = 0; i< listaPersonasJ.size() ; i++)
+			listaPersonasResultado = buscarPersonasQueEmpiecenPor(listaPersonas, 'J');
+			for (int i = 0; i< listaPersonasResultado.size() ; i++)
 			{
-				System.out.println(listaPersonasJ.get(i));	
+				System.out.println("Lista Personas cuyo nombre empieza por J :"+ listaPersonasResultado.get(i));	
 			}	
 			
 	//Llamada al método de obtener personas con edad menor a 60 años
 			
+			listaPersonasResultado2 = buscarPersonasHastaEdad(listaPersonas, 60);
+			for (int i = 0; i< listaPersonasResultado2.size() ; i++)
+			{
+				System.out.println("Lista Personas cuya edad es menor 60 : "+listaPersonasResultado2.get(i));	
+			}	
+			
 	//Impresión de las Personas restantes en la lista por medio de un foreach y utilización del toString()
 		
-		
+		for (Persona per : listaPersonasResultado2)
+		{
+			for (Persona per1 : listaPersonas)
+			{
+			if (listaPersonasResultado2.toString() != listaPersonas.toString())
+					{
+						System.out.println("Lista Personas cuya edad es mayor o igual a 60" + listaPersonas.toString());	
+					}
+			}
+			
+		}
 		
 		
 		
@@ -88,12 +106,32 @@ public class Bol5Ejer1 {
 	
 	/****************************** Apartado 2 ********************************************/
 	
-	public statid ArrayList<Persona> buscarPersonasHastaEdad (ArrayList<Persona> arrayPersonas, int edad)
+	public static ArrayList<Persona> buscarPersonasHastaEdad (ArrayList<Persona> listaPersonas, int e)
 	{
-		ArrayList<Persona> arrayPersona
+		ArrayList<Persona> listaPersonas1 = new ArrayList<>();
+		ArrayList<Persona> listaPersonas2 = new ArrayList<>();
+		int j = 0;
+		int k = 0;
+		for (int i= 0; i < listaPersonas.size(); i++)
+		{
+			Persona p=listaPersonas.get(i);  //devuelve un tipo Persona del arraylist
+			int edad = p.getEdad();	//getEdad() devuelve el campo edad de Persona
 		
+			
+			if (listaPersonas.get(i).getEdad() < e)
+			{
+				listaPersonas1.add (j, listaPersonas.get(i));
+				j++;
+			}
+			else
+			{
+				listaPersonas2.add (k, listaPersonas.get(i));
+				k++;
+			}
+		}
 		
+		return listaPersonas1;
 	}//buscarPersonasHastaEdad
 	
-
+	/*******************************************************************************************/
 }//Bol5Ejer1

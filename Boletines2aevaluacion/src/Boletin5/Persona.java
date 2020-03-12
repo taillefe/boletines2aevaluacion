@@ -26,6 +26,7 @@ public class Persona {
 		return edad;
 		}//getEdad
 		
+		/********************************* Apartado 3 **********************************************/
 		
 		@Override    	// sobreescribo este metodo para poder imprimir todo el objeto persona de una vez
 		public String toString() {
